@@ -133,10 +133,22 @@
     </div>
 
     <div class="w-[87%] px-3 py-2 bg-neutral-800">Content</div>
+
+    <!-- Play song -->
     <div
-      class="absolute w-full bottom-0 h-16 bg-neutral-800 border-t-neutral-700"
+      class="absolute w-full bottom-0 h-24 bg-neutral-800 border-t-neutral-700"
     >
-      Play back
+      <div class="flex justify-between h-full">
+        <div class="flex pl-4 pt-4 border border-red-500 w-1/3">
+          <img src="IMG/thumb-song.jpeg" alt="" />
+          <div class="flex flex-col">
+            <button class="text-sm">Moriste</button>
+            <button class="text-xs">Sergio Sacoto</button>
+          </div>
+        </div>
+        <div class="w-2/3 border border-red-500"></div>
+        <div class="w-1/3 border border-red-500"></div>
+      </div>
     </div>
   </div>
 </template>
