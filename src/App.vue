@@ -142,7 +142,7 @@
       <!--** Contenedor Padre -->
       <div class="flex justify-between h-full px-5">
         <!-- Hijo1 -->
-        <div class="flex items-center gap-x-3 border border-red-500 w-1/3">
+        <div class="flex items-center gap-x-3 w-1/3">
           <img class="w-14" src="IMG/thumb-song.jpeg" alt="" />
           <div class="flex flex-col">
             <button class="text-sm">Moriste</button>
@@ -169,7 +169,7 @@
         </div>
 
         <!-- Hijo2 -->
-        <div class="w-2/3 border border-red-500 space-y-2">
+        <div class="w-2/3 border space-y-2">
           <!--* Parte1 -->
           <div class="flex justify-center gap-x-4 mt-3">
             <!-- Shuffle ↓ -->
@@ -282,7 +282,7 @@
         </div>
 
         <!-- Hijo3 -->
-        <div class="w-1/3 border border-red-500">
+        <div class="w-1/3">
           <div
             class="flex items-center gap-x-3 justify-center h-full text-gray-400"
           >
