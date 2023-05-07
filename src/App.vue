@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-screen flex text-white">
-    <!-- Section -->
+    <!--* Section -->
     <div class="w-[13%] px-5 pt-6 bg-black text-gray-400 text-sm font-semibold">
       <svg
         class="text-white"
@@ -132,22 +132,237 @@
       </div>
     </div>
 
+    <!--* Contenido -->
     <div class="w-[87%] px-3 py-2 bg-neutral-800">Content</div>
 
-    <!-- Play song -->
+    <!--* PlayBar -->
     <div
       class="absolute w-full bottom-0 h-24 bg-neutral-800 border-t-neutral-700"
     >
-      <div class="flex justify-between h-full">
-        <div class="flex pl-4 pt-4 border border-red-500 w-1/3">
-          <img src="IMG/thumb-song.jpeg" alt="" />
+      <!--** Contenedor Padre -->
+      <div class="flex justify-between h-full px-5">
+        <!-- Hijo1 -->
+        <div class="flex items-center gap-x-3 border border-red-500 w-1/3">
+          <img class="w-14" src="IMG/thumb-song.jpeg" alt="" />
           <div class="flex flex-col">
             <button class="text-sm">Moriste</button>
             <button class="text-xs">Sergio Sacoto</button>
           </div>
+          <div class="flex items-center">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="w-2/3 border border-red-500"></div>
-        <div class="w-1/3 border border-red-500"></div>
+
+        <!-- Hijo2 -->
+        <div class="w-2/3 border border-red-500 space-y-2">
+          <!--* Parte1 -->
+          <div class="flex justify-center gap-x-4 mt-3">
+            <!-- Shuffle ↓ -->
+            <button class="text-gray-400 hover:text-white transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"
+                />
+              </svg>
+            </button>
+            <!-- Previous ↓ -->
+            <button class="text-gray-400 hover:text-white transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z"
+                />
+              </svg>
+            </button>
+            <!-- Play ↓ -->
+            <button class="text-slate-200 hover:text-white transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-10 h-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"
+                />
+              </svg>
+            </button>
+            <!-- Next ↓-->
+            <button class="text-gray-400 hover:text-white transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z"
+                />
+              </svg>
+            </button>
+            <!-- Repeat ↓ -->
+            <button class="text-gray-400 hover:text-white transition">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"
+                />
+              </svg>
+            </button>
+          </div>
+          <!--* Parte 2 -->
+          <div
+            class="group flex items-center text-xs text-gray-400 gap-x-2 px-2"
+          >
+            <div>0:38</div>
+            <div class="w-full h-1 rounded-md bg-gray-500">
+              <div
+                class="w-[25%] h-1 hover:bg-green-500 bg-slate-300 rounded-md relative"
+              >
+                <button
+                  class="group-hover:block hidden w-3 h-3 bg-white right-0 rounded-full absolute -bottom-full -top-full"
+                ></button>
+              </div>
+            </div>
+            <div>3:08</div>
+          </div>
+        </div>
+
+        <!-- Hijo3 -->
+        <div class="w-1/3 border border-red-500">
+          <div
+            class="flex items-center gap-x-3 justify-center h-full text-gray-400"
+          >
+            <button>
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+                />
+              </svg>
+            </button>
+            <div class="w-24">
+              <div class="group w-full bg-gray-500 h-1 rounded">
+                <div
+                  class="relative w-[85%] bg-white group-hover:bg-green-500 h-1 rounded"
+                >
+                  <div
+                    class="absolute hidden group-hover:block right-0 -bottom-full -top-full w-3 h-3 bg-white rounded-full"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
